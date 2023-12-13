@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 const Navbar = () => {
-  return(
+  return (
     <header>
       <div className="bg-sky-600 p-5 rounded-b-2xl flex justify-between items-center">
         <div className="flex gap-5 ">
@@ -12,10 +12,11 @@ const Navbar = () => {
         </div>
         <div>
           <Link href='/signup' className="py-2 px-4 rounded">Sign Up</Link>
-          <Link href='/login'className="py-2 px-4 rounded bg-black text-white">Login</Link>
+          <Link href='/login' className="py-2 px-4 rounded bg-black text-white">Login</Link>
         </div>
       </div>
     </header>
   )
 }
+
 export default Navbar
