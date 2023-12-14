@@ -1,5 +1,5 @@
 import Image from "next/image"
-import homePic2 from '@/../../public/img/homePic2.jpg'
+import homePic2 from '@/../../public/img/home/homePic2.jpg'
 import autoprefixer from "autoprefixer"
 
 const PopulerCourses = () => {
