@@ -1,26 +1,26 @@
-import Image from 'next/image'
-import homePic1 from '../../public/img/homePic1.png'
-import Link from "next/link"
+import BenefitsCard from "@/components/Home/BenefitsCard"
+import HomeTitle from "@/components/Home/HomeTitle"
+
 
 const Home = () => {
   return (
-  <div className="flex px-32 h-screen gap-20 justify-between items-center">
-    <div className='flex flex-col gap-5'>
-      <h1 className="text-blueEdu text-6xl font-bold">EduStreet:</h1>
-      <h2 className="text-black text-5xl font-bold">Jalan Pendidikan Menuju Kesuksesan</h2>
-      <h3 className="text-black text-3xl">Dapatkan Pengalaman Belajar Dinamis, Dengan Jalan Pendidikan Penuh Inovasi</h3>
-      <div className='flex gap-10 mt-7'>
-        <Link href='#' className='bg-redEdu text-md tracking-wide text-white py-4 px-6 rounded-md'>Explore Courses</Link>
-        <Link href='#' className='bg-redEdu text-md tracking-wide text-white py-4 px-6 rounded-md'>Pelajari Selengkapnya</Link>
+  <main className="px-32">
+    <section>
+      <HomeTitle/>
+    </section>
+
+    <section className="flex flex-col gap-10">
+      <h2 className="tracking-wider text-4xl font-bold">Benefits</h2>
+      <div className="grid grid-cols-3 gap-16">
+      <BenefitsCard/>
+      <BenefitsCard/>
+      <BenefitsCard/>
+      <BenefitsCard/>
+      <BenefitsCard/>
+      <BenefitsCard/>
       </div>
-    </div>
-    <div>
-      <Image
-        src={homePic1}
-        width={600}
-      />
-    </div>
-  </div>
+    </section>
+  </main>
   )
 }
 
