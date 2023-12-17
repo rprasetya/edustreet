@@ -11,7 +11,7 @@ const Home = () => {
     </section>
 
     <section className="flex flex-col gap-10">
-      <h2 className="tracking-widest text-4xl font-bold">Benefits</h2>
+      <h2 className="tracking-widest text-4xl font-bold">Rawr</h2>
       <div className="grid grid-cols-3 gap-16">
         <BenefitsCard/>
         <BenefitsCard/>
